@@ -1,23 +1,37 @@
-🔒 Singleton Pattern – Logger Example
+# 🔒 Singleton Pattern – Logger Example
 
-📌 Overview  
-This project demonstrates the **Singleton Design Pattern** using a simple `Logger` class. It ensures that only one instance of the logger exists throughout the application lifecycle, providing a global point of access for logging.
+## 📌 Overview  
+This project demonstrates the **Singleton Pattern** by implementing a `Logger` class.  
+The Singleton ensures that only **one instance** of the logger exists across the entire application,  
+providing a **global access point** for logging activities.
 
-🧱 Structure
+---
 
-| Component   | Description |
-|-------------|-------------|
-| `Logger`    | Singleton class that controls its own instance. It exposes `getInstance()` to ensure only one object is ever created. |
-| `Main`      | Demonstrates accessing the singleton instance and logging from different references. Validates that all references point to the same object. |
+## 🧱 Structure
 
-🧰 Key Features
-- Lazy Initialization (`instance` is created only when needed)
-- Private constructor prevents direct instantiation
-- Global access method `getInstance()`
-- Used for logging, configuration, or shared services
+| Component | Description |
+|-----------|-------------|
+| `Logger` | Singleton class with private constructor and static `getInstance()` |
+| `Main` | Demonstrates usage and validates that all logger instances are the same |
 
-🧪 Output
-Logger initialized
-[LOG] App started
-[LOG] App running
-✅ logger1 and logger2 are the SAME instance.
+---
+
+## ✅ Features
+
+- **Lazy Initialization** – Instance is created only when requested
+- **Private Constructor** – Prevents external instantiation
+- **Static getInstance()** – Provides global access
+- Useful for **logging**, **config management**, **resource control**
+
+---
+
+## 💻 Sample Code
+
+```java
+Logger logger1 = Logger.getInstance();
+Logger logger2 = Logger.getInstance();
+
+logger1.log("App started");
+logger2.log("App running");
+
+System.out.println(logger1 == logger2 ? "✅ SAME INSTANCE" : "❌ DIFFERENT INSTANCES");
