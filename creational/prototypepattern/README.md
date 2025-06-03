@@ -17,7 +17,6 @@ This project demonstrates the **Prototype Design Pattern** through a game charac
 - `deepCopy()` manually creates a new `Weapon` object → copies fully.
 
 🧪 Output
-```text
 Ahmed with weapon: Bow
 Hossam with weapon: Bow
 Ali with weapon: Axe
@@ -32,11 +31,10 @@ Copy
 Edit
 
 
----
 
 ## 🔒 `creational/singletonpattern/README.md`
 
-```markdown
+`markdown
 🔒 Singleton Pattern – Logger Example
 
 📌 Overview  
@@ -46,17 +44,17 @@ This project demonstrates the **Singleton Design Pattern** using a simple `Logge
 
 | Component   | Description |
 |-------------|-------------|
-| `Logger`    | Singleton class that provides a global access point through `getInstance()`. |
-| `Main`      | Demonstrates usage of the singleton instance and validates that all references point to the same object. |
+| Logger   | Singleton class that provides a global access point through `getInstance()`. |
+| Main     | Demonstrates usage of the singleton instance and validates that all references point to the same object. |
 
 🔧 Features:
 - Lazy initialization
 - Private constructor
-- Static `getInstance()` method
+- Static getInstance() method
 - Global shared instance
 
 🧪 Output
-```text
+text
 Logger initialized
 [LOG] App started
 [LOG] App running
