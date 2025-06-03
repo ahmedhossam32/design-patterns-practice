@@ -10,19 +10,36 @@ Each folder contains real-world exercises, use cases, and full working code — 
 ---
 
 ## 📁 Repository Structure
-design-patterns-practice/
-├── creational/ # ✅ Completed
-│ ├── abstractfactory/ ← Abstract Factory Pattern
-│ ├── builder/ ← Resume Builder using Builder Pattern
-│ ├── factorymethod/ ← Cleaning Services using Factory Method
-│ ├── prototypepattern/ ← Game Character Cloning (Shallow + Deep)
-│ ├── simplefactory/ ← Notification Sender (Simple Factory)
-│ ├── singletonpattern/ ← Logger (Singleton)
-│ └── .gitkeep
-├── structural/
-│ └── (to be added)
-├── behavioral/
-│ └── (to be added)
+## 📁 Repository Structure
+
+### ✅ Creational (Completed)
+
+- `abstractfactory/`  
+  ↳ Abstract Factory Pattern
+
+- `builder/`  
+  ↳ Resume Builder using Builder Pattern
+
+- `factorymethod/`  
+  ↳ Cleaning Services using Factory Method
+
+- `prototypepattern/`  
+  ↳ Game Character Cloning (Shallow + Deep)
+
+- `simplefactory/`  
+  ↳ Notification Sender (Simple Factory)
+
+- `singletonpattern/`  
+  ↳ Logger (Singleton)
+
+---
+
+### 🛠️ Structural  
+_(To be added)_
+
+### 🔜 Behavioral  
+_(To be added)_
+
 
 
 
