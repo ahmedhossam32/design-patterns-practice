@@ -8,32 +8,22 @@ This repository contains hands-on Java implementations of commonly used **Object
 Each folder contains real-world exercises, use cases, and full working code — ready to run and explore.
 
 ---
-
-## 📁 Repository Structure
 ## 📁 Repository Structure
 
 ### ✅ Creational (Completed)
-
 - `abstractfactory/`  
   ↳ Abstract Factory Pattern
-
 - `builder/`  
   ↳ Resume Builder using Builder Pattern
-
 - `factorymethod/`  
   ↳ Cleaning Services using Factory Method
-
 - `prototypepattern/`  
   ↳ Game Character Cloning (Shallow + Deep)
-
 - `simplefactory/`  
   ↳ Notification Sender (Simple Factory)
-
 - `singletonpattern/`  
   ↳ Logger (Singleton)
-
 ---
-
 ### 🛠️ Structural  
 _(To be added)_
 
