@@ -1,49 +1,32 @@
- 
-# 🧱 Exercise 1: Resume Builder using Builder Pattern
+# 🏗️ Builder Pattern – Resume Builder
 
-## 📌 Pattern Type
-Creational Design Pattern
-
-## 📚 Scenario
-This exercise demonstrates the use of the **Builder Design Pattern** to create a customizable `Resume` (CV) object.
-
-In real-world scenarios, resumes often include many **optional fields** such as:
-- Phone number
-- Education
-- Work experience
-- Skills
-- LinkedIn, Summary, Certifications (future extensions)
-
-Traditional constructors would require all fields to be passed, even when some are not needed. This makes the code hard to read and maintain.
+## 📌 Overview  
+This project demonstrates the **Builder Pattern** by assembling a customizable `Resume` object.  
+It uses a fluent builder interface to handle optional fields without relying on telescoping constructors.
 
 ---
 
-## 🎯 Problem
-We needed a way to:
-- Avoid telescoping constructors
-- Flexibly create objects with **some or all** fields
-- Improve code readability and maintainability
+## 🧱 Structure
+
+| Component | Description |
+|-----------|-------------|
+| `Resume` | Immutable object representing a resume (CV) |
+| `Builder` | Nested static builder class supporting method chaining |
+| `Education`, `WorkExperience` | Supporting classes for optional resume fields |
+| `Main` | Demonstrates building a resume with selected fields |
 
 ---
 
-## ✅ Solution
-We implemented the Builder Pattern to:
-- Use a **nested static Builder class**
-- Add **fluent method chaining** like `.setEmail()` and `.addSkill()`
-- Enforce **immutability** for the `Resume` object
-- Generate a fully assembled `Resume` using `.build()`
+## ✅ Features
+
+- Avoids constructor overloading and telescoping
+- Supports **optional fields** cleanly with method chaining
+- Creates **immutable** Resume objects
+- Great for objects with many optional fields (real-world use case)
 
 ---
 
-## 🔧 Technologies Used
-- Java
-- Object-Oriented Programming
-- NetBeans (initial development)
-- GitHub (version control)
-
----
-
-## 💻 Sample Usage
+## 💻 Sample Code
 
 ```java
 Resume resume = new Resume.Builder()
@@ -51,7 +34,7 @@ Resume resume = new Resume.Builder()
     .setEmail("ahmed@example.com")
     .setPhone("01012345678")
     .setEducation(new Education("B.Sc. in CS", "Cairo University", 2019, 2023))
-    .setWorkExperience(new WorkExpercience("Software Engineer", "Google", 2020, 2023))
+    .setWorkExperience(new WorkExperience("Software Engineer", "Google", 2020, 2023))
     .addSkill("Java")
     .addSkill("Spring Boot")
     .addSkill("Git")
