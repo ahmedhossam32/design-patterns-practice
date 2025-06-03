@@ -6,7 +6,6 @@ This repository contains hands-on Java implementations of commonly used **Object
 - 🔜 Behavioral (Coming Soon)
 
 Each folder contains real-world exercises, use cases, and full working code — ready to run and explore.
-
 ---
 ## 📁 Repository Structure
 
