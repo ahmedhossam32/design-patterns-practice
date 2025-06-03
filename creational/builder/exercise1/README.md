@@ -41,3 +41,13 @@ Resume resume = new Resume.Builder()
     .build();
 
 System.out.println(resume);
+
+
+##🧪 Example Output
+Full Name: Ahmed Hossam
+Email: ahmed@example.com
+Phone: 01012345678
+Education: B.Sc. in CS, Cairo University (2019–2023)
+Experience: Software Engineer at Google (2020–2023)
+Skills: [Java, Spring Boot, Git]
+
