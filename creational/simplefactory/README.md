@@ -1,21 +1,39 @@
+# 🏭 Simple Factory Pattern – Notification System
 
-# Simple Factory Pattern – Notification System
+## 📌 Overview  
+This project demonstrates the **Simple Factory Pattern** through a basic notification system.  
+A central factory method creates different types of notifications (Email, SMS, Push) based on input,  
+decoupling the creation logic from the client code.
 
-This example demonstrates the Simple Factory Pattern in Java using a Notification System.
+---
 
-## 💡 Pattern Summary
+## 🧱 Structure
 
-The factory returns different types of notifications (Email, SMS, Push) based on input.
-This decouples the creation logic from the client code.
+| Component | Description |
+|-----------|-------------|
+| `Notification` | Interface representing a general notification |
+| `EmailNotification`, `SMSNotification`, `PushNotification` | Concrete notification types |
+| `NotificationFactory` | Simple factory class that returns appropriate notification |
+| `Main` | Client code that uses the factory to send notifications |
 
-## 📁 Classes
+---
 
-- `Notification` – interface
-- `EmailNotification`, `SMSNotification`, `PushNotification` – implementations
-- `NotificationFactory` – simple factory that returns the right object
-- `Main` – client code using the factory
+## ✅ Features
 
-## ✅ Output Example
-Sending an Email Notification
-Sending an SMS Notification
-Sending a Push Notification
+- Centralized object creation logic
+- **Reduces coupling** between client and concrete classes
+- Easily extendable for new types of notifications
+- Simple and practical design for real-world systems
+
+---
+
+## 💻 Sample Code
+
+```java
+Notification email = NotificationFactory.createNotification("EMAIL");
+Notification sms = NotificationFactory.createNotification("SMS");
+Notification push = NotificationFactory.createNotification("PUSH");
+
+email.send();
+sms.send();
+push.send();
